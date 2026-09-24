@@ -13,7 +13,7 @@ int main(){
         int num_threads = omp_get_num_threads();
 
         // all threads compete for std::cout so we have jumbled output
-        std::cout<<"Hello World from! "<< thread_id<<" / "<<num_threads<<std::endl;
+        std::cout<<"Hello World from thread ! "<< thread_id<<" / "<<num_threads<<std::endl;
 
         // using this makes sure that this instruction is executed by one thread completely, only then the next thread begins
         // #pragma omp critical
